@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "category": "React",
+    "title": "Getting Started with React",
+    "excerpt": "React is a JavaScript library for building user interfaces. Learn the core concepts that make it the go-to choice for modern web development.",
+    "date": "Jun 11, 2026",
+    "readTime": "5 min read",
+    "size": "large",
+    "color": "tile-blue"
+  },
+  {
+    "id": 2,
+    "category": "Data Engineering",
+    "title": "Why Learn Data Engineering?",
+    "excerpt": "Data engineering focuses on building systems that collect, process, and store data efficiently — the foundation every data team needs.",
+    "date": "Jun 8, 2026",
+    "readTime": "4 min read",
+    "size": "medium",
+    "color": "tile-purple"
+  },
+  {
+    "id": 3,
+    "category": "CSS",
+    "title": "Mastering CSS Grid",
+    "excerpt": "Two-dimensional layouts, finally easy.",
+    "date": "Jun 5, 2026",
+    "readTime": "3 min read",
+    "size": "small",
+    "color": "tile-teal"
+  },
+  {
+    "id": 4,
+    "category": "JavaScript",
+    "title": "Async/Await Explained",
+    "excerpt": "Write cleaner async code without callback hell.",
+    "date": "Jun 2, 2026",
+    "readTime": "4 min read",
+    "size": "small",
+    "color": "tile-orange"
+  },
+  {
+    "id": 5,
+    "category": "DevOps",
+    "title": "Docker for Frontend Devs",
+    "excerpt": "Containerise your React app in under 10 minutes.",
+    "date": "May 29, 2026",
+    "readTime": "6 min read",
+    "size": "medium",
+    "color": "tile-green"
+  }
+]
