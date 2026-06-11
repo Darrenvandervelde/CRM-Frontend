@@ -1,70 +1,142 @@
-# Getting Started with Create React App
+# CRM Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern React-based Customer Relationship Management (CRM) frontend framework designed to provide a clean, intuitive interface for managing customer interactions and business operations.
 
-## Available Scripts
+## 🎯 Overview
 
-In the project directory, you can run:
+This project is a CRM Frontend Framework built with **React 19** and modern web technologies. It features a modular component architecture, responsive design, and a professional UI with dark mode support.
+
+## ✨ Features
+
+- **React 19** - Latest React version with modern hooks
+- **React Router** - Client-side routing for seamless navigation
+- **Dark Mode Support** - Themed CSS variables for light/dark themes
+- **Responsive Design** - Mobile-friendly UI with CSS modules
+- **Component Architecture** - Modular, reusable components
+- **Professional UI** - Integrated Flaticon for consistent iconography
+- **Chat Interface** - Interactive chat component with toggle functionality
+- **Multi-page Layout** - Home, About, Contact Us pages with navigation
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- **Node.js** (v14 or higher)
+- **npm** or **yarn**
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/Darrenvandervelde/CRM-Frontend.git
+cd CRM-Frontend
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm start
+```
+
+The app will open in your browser at [http://localhost:3000](http://localhost:3000).
+
+## 📁 Project Structure
+
+```
+src/
+├── components/
+│   ├── Navbar.js
+│   ├── Chat.js
+│   └── ... (other components)
+├── pages/
+│   ├── Home.js
+│   ├── About.js
+│   ├── ContactUs.js
+│   └── ... (other pages)
+├── assets/
+│   ├── images/
+│   └── ... (static assets)
+├── styles/
+│   ├── index.css
+│   └── ... (component styles)
+├── App.js
+└── index.js
+```
+
+## 📦 Available Scripts
 
 ### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Runs the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser. The page reloads when you make changes.
 
 ### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in interactive watch mode.
 
 ### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes for performance. The build is minified and ready for deployment.
 
 ### `npm run eject`
+**Note: this is a one-way operation. Once you eject, you can't go back!**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🎨 Styling
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The project uses **CSS modules** with themed CSS variables for consistent styling across components. Dark mode support is built-in through CSS variables defined in the main stylesheet.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🔌 Components
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Navbar
+Main navigation component with links to different sections of the application.
 
-## Learn More
+### Chat
+Interactive chat interface with toggle functionality for user interactions.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Pages
+- **Home** - Landing page with company overview
+- **About** - Information about the CRM system
+- **Contact Us** - Contact form and information
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🛠️ Tech Stack
 
-### Code Splitting
+- **React 19** - UI library
+- **React Router** - Client-side routing
+- **CSS Modules** - Scoped styling
+- **Flaticon** - Icon library
+- **Create React App** - Build tool and development environment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📝 Development Roadmap
 
-### Analyzing the Bundle Size
+- [ ] Backend API integration
+- [ ] Environment configuration (.env setup)
+- [ ] Error boundary implementation
+- [ ] Input validation and error handling
+- [ ] TypeScript migration
+- [ ] Comprehensive test suite
+- [ ] State management (Redux/Context API)
+- [ ] User authentication
+- [ ] Dashboard features
+- [ ] Customer management interface
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🤝 Contributing
 
-### Making a Progressive Web App
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📄 License
 
-### Advanced Configuration
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 👤 Author
 
-### Deployment
+**Darren van der Velde**
+- GitHub: [@Darrenvandervelde](https://github.com/Darrenvandervelde)
+- Email: Darrenvandervelde@gmail.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📞 Support
 
-### `npm run build` fails to minify
+For issues, questions, or suggestions, please open an issue on the [GitHub repository](https://github.com/Darrenvandervelde/CRM-Frontend/issues).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+**Last Updated:** June 11, 2026

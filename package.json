@@ -1,6 +1,7 @@
 {
-  "name": "myapp",
+  "name": "crm-frontend",
   "version": "0.1.0",
+  "description": "CRM Frontend Framework built with React 19",
   "private": true,
   "dependencies": {
     "@flaticon/flaticon-uicons": "^3.3.1",
