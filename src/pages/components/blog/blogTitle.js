@@ -1,5 +1,3 @@
-import posts from './data/posts.json';
-
 function BlogTile({ post }) {
     return (
         <article
