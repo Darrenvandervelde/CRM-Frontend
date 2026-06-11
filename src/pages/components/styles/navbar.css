@@ -1,0 +1,82 @@
+:root {
+    --primary: #7c3aed;
+    --secondary: #4f46e5;
+    --background: #111827;
+    --surface: #1f2937;
+    --text: #f9fafb;
+    --hover: #8b5cf6;
+}
+
+nav {
+    background: linear-gradient(
+        135deg,
+        var(--surface),
+        #2d3748
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 20px auto;
+
+    padding: 12px 24px;
+
+    border-radius: 100px;
+    border: 1px solid rgba(255,255,255,0.1);
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,0.3),
+        0 0 15px rgba(124,58,237,0.2);
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    color: var(--text);
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+nav ul li:hover {
+    color: var(--hover);
+}
+
+.CompanyLogo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.BTN-1 {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.BTN-1:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+.LoginBTN {
+    margin-left: 10px;
+}

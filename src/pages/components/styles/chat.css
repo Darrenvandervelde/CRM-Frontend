@@ -1,0 +1,220 @@
+:root {
+    --primary: #7c3aed;
+    --secondary: #4f46e5;
+    --background: #111827;
+    --surface: #1f2937;
+    --text: #f9fafb;
+    --hover: #8b5cf6;
+}
+
+.ChatBtn {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--surface);
+    border: 1px solid rgba(255,255,255,0.1);
+    color: white;
+
+    z-index: 1;
+}
+
+.ChatBtn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.fi.fi-br-menu-burger {
+    font-size: 20px;
+    line-height: 1;
+}
+
+.ChatBtn i {
+    font-size: 20px;
+    line-height: 1;
+    color: white;
+}
+
+.ChatBtn i:hover {
+    font-size: 20px;
+    line-height: 1;
+    color: white;
+}
+
+.ChatContainer {
+    position: fixed;
+    bottom: 3px;
+    right: 100px;
+
+    width: 350px;
+    height: 500px;
+
+    background: var(--surface);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 20px;
+
+    display: none;
+    flex-direction: column;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.3),
+        0 0 20px rgba(124, 58, 237, 0.15);
+
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+
+    animation: chatOpen 0.3s ease;
+    z-index: -9999;
+}
+
+.ChatContainer.open {
+    display: flex;
+}
+
+/* Header */
+.ChatHeader {
+    display: flex;
+    align-items: center;
+    justify-content:left;
+    gap: 12px;
+
+    padding: 16px 20px;
+
+    background: linear-gradient(
+        135deg,
+        var(--background),
+        var(--background)
+    );
+
+    color: var(--text);
+    font-weight: 600;
+}
+
+.ChatHeader h3 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.ChatHeader img {
+    width: 22px;
+    height: 100%;
+
+}
+
+/* Messages */
+.ChatMessages {
+    flex: 1;
+    padding: 16px;
+
+    overflow-y: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Bot Message */
+.BotMessage {
+    align-self: flex-start;
+
+    max-width: 80%;
+
+    padding: 12px 14px;
+
+    background: rgba(124, 58, 237, 0.15);
+    border: 1px solid rgba(124, 58, 237, 0.3);
+
+    color: var(--text);
+
+    border-radius: 16px 16px 16px 4px;
+}
+
+/* User Message */
+.UserMessage {
+    align-self: flex-end;
+
+    max-width: 80%;
+
+    padding: 12px 14px;
+
+    background: var(--primary);
+
+    color: white;
+
+    border-radius: 16px 16px 4px 16px;
+}
+
+/* Input Area */
+.ChatInputArea {
+    display: flex;
+    gap: 10px;
+
+    padding: 15px;
+
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.ChatInputArea input {
+    flex: 1;
+
+    padding: 12px;
+
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 12px;
+
+    background: var(--background);
+    color: var(--text);
+
+    outline: none;
+}
+
+.ChatInputArea input:focus {
+    border-color: var(--primary);
+}
+
+.SendBtn {
+    width: 45px;
+    height: 45px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: linear-gradient(
+        135deg,
+        var(--background),
+        var(--background)
+    );
+
+    color: white;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SendBtn:hover {
+    background: var(--hover);
+}
+
+@keyframes chatOpen {
+    from {
+        opacity: 0;
+        transform: translateY(15px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
