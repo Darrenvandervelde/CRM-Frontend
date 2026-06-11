@@ -1,0 +1,126 @@
+:root {
+    --primary: #7c3aed;
+    --secondary: #4f46e5;
+    --background: #111827;
+    --surface: #1f2937;
+    --text: #f9fafb;
+    --hover: #8b5cf6;
+}
+
+.ContactUsContainer {
+    min-height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.ContactUsContent {
+    width: 100%;
+    max-width: 600px;
+}
+
+.ContactUsContent h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: var(--text);
+}
+
+.Subtitle {
+    font-size: 1.1rem;
+    color: rgba(249, 250, 251, 0.7);
+    margin-bottom: 30px;
+}
+
+.ContactForm {
+    background: rgba(31, 41, 55, 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.FormGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.FormGroup label {
+    font-weight: 600;
+    color: var(--text);
+    font-size: 14px;
+}
+
+.FormGroup input,
+.FormGroup textarea {
+    padding: 12px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    background: rgba(17, 24, 39, 0.8);
+    color: var(--text);
+    font-family: inherit;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.FormGroup input::placeholder,
+.FormGroup textarea::placeholder {
+    color: rgba(249, 250, 251, 0.4);
+}
+
+.FormGroup input:focus,
+.FormGroup textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    background: rgba(17, 24, 39, 0.95);
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.1);
+}
+
+.FormGroup textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.SubmitBtn {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.SubmitBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(124, 58, 237, 0.3);
+}
+
+.SubmitBtn:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .ContactUsContainer {
+        padding: 20px 15px;
+    }
+
+    .ContactUsContent h1 {
+        font-size: 2rem;
+    }
+
+    .ContactForm {
+        padding: 20px;
+    }
+
+    .Subtitle {
+        font-size: 1rem;
+    }
+}

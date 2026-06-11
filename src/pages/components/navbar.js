@@ -7,22 +7,30 @@ function Navbar() {
 
     return (
         <nav>
-            <img src='./assets/CompanyLogo.png' alt='Company Logo' className='CompanyLogo'/>
+            <img 
+                src='./assets/CompanyLogo.png' 
+                alt='Company Logo' 
+                className='CompanyLogo'
+                onClick={() => navigate('/')}
+                style={{ cursor: 'pointer' }}
+            />
             <ul>
                 <li>
-                    <button className='BTN-1' onClick={() => navigate('/')}>Home</button>
+                    <button className='BTN-1' onClick={() => navigate('/')}>
+                        Home
+                    </button>
                 </li>
                 <li>
-                    <button className='BTN-1' onClick={() => navigate('/blog')}>Blog</button>
+                    <button className='BTN-1' onClick={() => navigate('/about')}>
+                        About
+                    </button>
                 </li>
                 <li>
-                    <button className='BTN-1' onClick={() => navigate('/about')}>About</button>
-                </li>
-                <li>
-                    <button className='BTN-1' onClick={() => navigate('/contactUs')}>Contact Us</button>
+                    <button className='BTN-1' onClick={() => navigate('/contactUs')}>
+                        Contact Us
+                    </button>
                 </li>
             </ul>
-            <button className='BTN-1 LoginBTN' onClick={() => navigate('/login')}>Login</button>
         </nav>
     );
 }
