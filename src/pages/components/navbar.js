@@ -26,6 +26,11 @@ function Navbar() {
                     </button>
                 </li>
                 <li>
+                    <button className='BTN-1' onClick={() => navigate('/blog')}>
+                        Blog
+                    </button>
+                </li>
+                <li>
                     <button className='BTN-1' onClick={() => navigate('/contactUs')}>
                         Contact Us
                     </button>
